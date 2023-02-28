@@ -1,0 +1,49 @@
+SERVER CREATION
+
+Basic commands
+
+1.create package.jason = npm init
+2.create node modules
+  installing express:  npm i express
+
+Basic steps
+1.  Creating a folder (bankserver)
+2.  create package.jason
+3.  create nodemodules
+4.  create index.js 
+5.  import express inside index.js
+6.  create app using express
+7.  setup port number
+8.  resolving http requests
+9.  install nodemon -  npm i -g nodemon
+10. http response code
+     100 range -- info
+     200 range -- success
+     300 range -- redirection
+     400 range -- client error
+     500 range -- server error
+11. JWT token authentication
+    to check the login activity
+    login -----tokengenerated---->client-----req to deposit+token---->server token check?
+    i)  install JWT token - jsonwebtoken
+        npm i jsonwebtoken
+   ii)  to generate a new JWT token - sign()
+   iii) middleware - to veriy token
+        comes in the middle of the request and response
+        it also provide access to many function
+        a. Application level middle ware
+          for entire Application
+
+          eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50QWNubyI6IjEwMDciLCJpYXQiOjE2NzcxMjc4MTJ9.753Lh7hXSdK0x44uLJi4IEICIIgJDjpMvKFkX0JudgY
+
+12.  Database integration
+        install mongoose - npm i mongoose - for connecting nodejs and mongodb
+        db connect via mongoose
+        create a model using mongoose
+
+13. Asynchronous function resoling
+        resolving state - then()
+        rejection state - catch() 
+
+14. CORS - cross origin resource sharing
+           instll cors - npm i cors
